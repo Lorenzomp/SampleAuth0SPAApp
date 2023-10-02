@@ -54,8 +54,8 @@ const configureClient = async () => {
   const config = await response.json();
 
   auth0Client = await auth0.createAuth0Client({
-    domain: process.env.domain, //config.domain,
-    clientId: process.env.clientId  //config.clientId
+    domain: config.domain,
+    clientId: config.clientId
   });
 };
 
