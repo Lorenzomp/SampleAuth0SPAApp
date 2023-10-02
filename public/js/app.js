@@ -1,6 +1,3 @@
-// Getting the .env file
-require('dotenv').config();
-
 // The Auth0 client, initialized in configureClient()
 let auth0Client = null;
 
