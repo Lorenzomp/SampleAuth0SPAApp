@@ -1,5 +1,9 @@
+// Getting the .env file
+require('dotenv').config();
+
 // The Auth0 client, initialized in configureClient()
 let auth0Client = null;
+
 
 /**
  * Starts the authentication flow
@@ -53,8 +57,8 @@ const configureClient = async () => {
   const config = await response.json();
 
   auth0Client = await auth0.createAuth0Client({
-    domain: config.domain,
-    clientId: config.clientId
+    domain: process.env.domain, //config.domain,
+    clientId: process.env.clientId  //config.clientId
   });
 };
 

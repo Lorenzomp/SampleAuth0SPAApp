@@ -8,13 +8,11 @@ The sample can be run locally, by cloning the repository to your machine and the
 
 ### Specifying Auth0 Credentials
 
-To specify the application client ID and domain, make a copy of `auth_config.json.example` and rename it to `auth_config.json`. Then open it in a text editor and supply the values for your application:
+To specify the application client ID and domain, make a copy of `.env.example` and rename it to `.env`. Then open it in a text editor and supply the values for your application:
 
-```json
-{
-  "domain": "dev-nhd7b2iim74wwjr6.us.auth0.com",
-  "clientId": "ICf7bzl82pPxac7CKo2VrxyjnSeIE2F2"
-}
+```
+domain=dev-XXX.us.auth0.com
+clientId=XXX
 ```
 
 ### Installation
